@@ -1,0 +1,113 @@
+:root {
+    --height-painel: 400px;
+    --width-painel: 270px;
+}
+
+/* Plano de fundo */
+.main {
+    height: 100vh;
+}
+.background {
+    user-select: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Painel */
+.painel {
+    height: var(--height-painel);
+    width: var(--width-painel);
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.efeito-vidro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: var(--height-painel);
+    width: var(--width-painel);
+    padding: 2rem;
+    position: absolute;
+    
+    opacity: 70%;
+    background-color: rgb(155, 155, 155);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 17px;
+}
+
+/* Input de Pesquisa */
+.campo-busca {
+    height: 28px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: .7rem
+}
+.campo-busca div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container-input {
+    max-height: 15px;
+    width: 12em;
+    padding: .3rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.container-input input {
+    background-color: #FFF;
+    color: black;
+    width: 100%;
+    font-size: 11pt;
+    border: none;
+    display: inline;
+    line-height: 50%;
+    outline: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Quadro de temperatura */
+
+.name-city {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+.name-city h1 {
+    font-size: xx-large;   
+}
+.name-city img {
+    height: 40%;
+    margin-right: 15px;
+}
+
+.icone-tempo {
+    margin-top: 40px;
+}
+.icone-tempo p {
+    margin-bottom: .7rem;
+}
+
+.temperatura {
+    margin-top: 40px;
+    text-align: center;
+}
+#temperatura {
+    font-size: 40pt;
+    font-weight: 700;
+}
